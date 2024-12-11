@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 
 const NewArrival = () => {
   return (
@@ -19,13 +20,10 @@ const NewArrival = () => {
       {/* Text Section */}
       <div className="text-center mr-9 lg:text-left">
         <p className="text-xl font-semibold">New Arrival</p>
-        <h1 className="text-3xl md:text-5xl font-bold mt-2">
-          Asgaard sofa
-        </h1>
+        <h1 className="text-3xl md:text-5xl font-bold mt-2"> 
+         Asgaard sofa</h1>
         <br /><br />
-        <button className="border-2 border-black px-14 py-3 mt-1 text-lg transition-transform duration-300 hover:scale-125 ease-in-out">
-          Order Now
-        </button>
+        <button className='border-2 border-black px-14 py-3 mt-1 text-lg transition-transform duration-300 hover:scale-125 ease-in-out'><Link href="/product">  Order Now</Link></button>
       </div>
     </main>
   )

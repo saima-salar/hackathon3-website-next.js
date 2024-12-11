@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CardSection from "./components/CardSection";
 import Footer from "./components/Footer";
-import TopSelling from "./components/TopSelling";
+import TopPicks from "./components/TopPicks";
 import Heading from "./components/Heading";
 import NewArrival from "./components/NewArrival";
 import Blogs from "@/app/components/Blog"
@@ -19,7 +19,7 @@ const page = () => {
         <Hero />
         <CardSection />
         <Heading />
-        <TopSelling />
+        <TopPicks />
         <NewArrival />
         <Blogs />
         <Instagram />
