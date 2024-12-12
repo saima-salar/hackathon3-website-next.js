@@ -4,14 +4,19 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
   return (
     <main>
       <nav className=" h-100 flex justify-between items-center px-10 py-4 bg-[#FFFFFF] drop-shadow-lg">
-        <div className="text-lg font-extrabold transition-transform duration-300 hover:scale-125 ease-in-out">
-          Logo
-        </div>
+        <div className="text-lg font-extrabold transition-transform duration-300 hover:scale-125 ease-in-out">  
+                <Image 
+                 src="/images/contact/logo.png" 
+                 alt="image" 
+                 width={40} 
+                 height={40} 
+               /></div>
         <ul className="flex space-x-6 text-[14px] text-[#000000]">
           <li className="transition-transform duration-300 hover:scale-125 ease-in-out">
             <Link href="/">Home</Link>
@@ -46,13 +51,18 @@ const page = () => {
       >
         <div className="absolute inset-0 bg-black opacity-5"></div>
 
-        <div className="z-10 text-center text-[#000000]">
-            <span className="text-2xl">Logo</span>
-          <h1 className="text-4xl md:text-4xl font-bold mb-4">My Account</h1>
-          <div className="p-4 text-[#000000] bg-opacity-50">
-            <Link href="/">Home</Link> &gt; <span>My Account</span>
-          </div>
-        </div>
+        <div className="z-10 text-center flex flex-col justify-center items-center text-[#000000]">
+  <Image 
+    src="/images/contact/logo.png" 
+    alt="image" 
+    width={77} 
+    height={77} 
+  />
+  <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">My Account</h1>
+    <div className="p-4 text-[#000000] bg-opacity-50">
+      <Link href="/">Home</Link> &gt; <span>My Account</span>
+    </div>
+  </div>
       </section>
 
       <section>
@@ -256,6 +266,9 @@ const page = () => {
           </div>
         </div>
       </footer>
+      <div className="border-t mt-8 pt-2 text-center text-gray-500 text-sm">
+      ecommorce © Made by <b className="text-black">Saima Salar</b>, Figma Designed by <b className="text-black">Meubel House</b>
+      </div> 
     </main>
   );
 };
