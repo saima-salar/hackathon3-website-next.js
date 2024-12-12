@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const NewArrival = () => {
   return (
-    <main className="bg-[#FFF9E5] h-auto w-full flex flex-row lg:flex-row items-center justify-between px-8 py-15">
+    <main className="bg-[#FFF9E5] h-639 w-1476 flex flex-row lg:flex-row items-center justify-between px-8 py-15">
       
       {/* Image Section */}
       <div className="mb-8 lg:mb-0">

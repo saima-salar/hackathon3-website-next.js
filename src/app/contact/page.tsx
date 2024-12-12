@@ -37,12 +37,15 @@ const page = () => {
         </li>
       </ul>
 
-      <div className="flex space-x-4">
-        <FaRegUser className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
-        <IoSearch className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
-        <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
-        <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
-      </div>
+    
+<div className="flex space-x-4">
+  <Link href="/account">
+    <FaRegUser className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out cursor-pointer" />
+  </Link>
+  <IoSearch className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
+  <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
+  <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
+</div>
     </nav>
 
     <section

@@ -258,6 +258,8 @@ const page = () => {
     <Image
       src="/images/product/Cloud sofa three seater + ottoman_2 1.png"
       alt="Product"
+      width={250}
+      height={250}
       className="h-full w-full object-cover rounded-lg"
     />
   </div>
@@ -267,6 +269,8 @@ const page = () => {
     <Image
       src="/images/product/Cloud sofa three seater + ottoman_1 1.png"
       alt="Product"
+      width={250}
+      height={250}
       className="h-full w-full object-cover rounded-lg"
     />
   </div>
@@ -362,7 +366,7 @@ const page = () => {
 
 
     <footer className="bg-[#FFFFFF] py-8">
-      <div className="container mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-5 md:px-10 flex flex-cols-1 md:grid-cols-4 gap-8">
         {/* Contact Section */}
         <div>
          
@@ -429,28 +433,8 @@ const page = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
+ 
     </main>
-
-
-
-
-
-
-
-
 
   );
 };

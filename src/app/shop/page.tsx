@@ -12,7 +12,7 @@ import { BsViewList } from "react-icons/bs";
 const page = () => {
   return (
  <main className='w-1440'>
-    <nav className="flex justify-between items-center px-10 py-4 bg-[#FFFFFF] drop-shadow-lg">
+    <nav className=" h-100 flex justify-between items-center px-10 py-4 bg-[#FFFFFF] drop-shadow-lg">
     <div className="text-lg font-extrabold transition-transform duration-300 hover:scale-125 ease-in-out">   <Image 
         src="/images/contact/logo.png" 
         alt="image" 
@@ -28,12 +28,13 @@ const page = () => {
 
 
     <div className="flex space-x-4">
-      <FaRegUser className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
-      <IoSearch className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
-      <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
-      <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
-   
-    </div>
+  <Link href="/account">
+    <FaRegUser className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out cursor-pointer" />
+  </Link>
+  <IoSearch className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
+  <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
+  <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
+</div>
   </nav>
 
   <section
@@ -44,9 +45,15 @@ const page = () => {
 >
   <div className="absolute inset-0 bg-black opacity-30"></div>
 
-  <div className="z-10 text-center text-white">
-    <h1 className="text-4xl md:text-6xl font-bold mb-4">Shop</h1>
-    <div className="p-4 text-white bg-opacity-50">
+      <div className="z-10 text-center flex flex-col justify-center items-center text-[#000000]">
+  <Image 
+    src="/images/contact/logo.png" 
+    alt="image" 
+    width={77} 
+    height={77} 
+  />
+  <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Shop</h1>
+    <div className="p-4 text-[#000000] bg-opacity-50">
       <Link href="/">Home</Link> &gt; <span>Shop</span>
     </div>
   </div>
@@ -96,7 +103,7 @@ const page = () => {
     </section>
 
 
-<section className="grid grid-cols-4 gap-6 px-4 py-8">
+<section className=" h-1808 grid grid-cols-4 gap-6 px-4 py-8">
   {[
     { src: "/images/second-page/Trenton modular sofa_3 1.png", alt: "Product 1", name: "Product 1", price: "Rs. 24,000.00" },
     { src: "/images/second-page/Granite dining table with dining chair 1.png", alt: "Product 2", name: "Product 2", price: "Rs. 32,000.00" },
@@ -128,7 +135,7 @@ const page = () => {
       />
       <div className="mt-4">
         <p className="font-medium">{item.name}</p>
-        <p className="text-lg font-bold text-gray-800 mt-2">{item.price}</p>
+        <p className="text-lg font-bold text-[#000000] mt-2">{item.price}</p>
       </div>
     </div>
   ))}
@@ -157,7 +164,7 @@ const page = () => {
       </div>
     </div>
 
-<section className="bg-[#FAF4F4]  py-8 flex justify-evenly items-center w-full">
+<section className="bg-[#FAF4F4]  py-8 flex justify-evenly items-center w-1440 h-300">
   <div className="text-left">
     <h3 className="text-xl font-semibold">Free Delivery</h3>
     <p className="text-xs text-[#9F9F9F]">For all orders over $50, consectetur <br /> adipim scing elit.</p>
@@ -172,8 +179,8 @@ const page = () => {
   </div>
 </section>
 
-<footer className="bg-[#FFFFFF] py-8">
-      <div className="container mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+<footer className="bg-[#FFFFFF] w-1440 h-555 py-8">
+      <div className="container mx-auto px-5 md:px-10 flex flex-cols-1 md:grid-cols-4 gap-8">
         {/* Contact Section */}
         <div>
          
@@ -226,7 +233,7 @@ const page = () => {
         />
         <button
           type="submit"
-          className="text-black font-bold px-4 py-2 border-b-2 border-black hover:bg-gray-800 hover:text-white transition"
+          className="text-black font-bold px-4 py-2 border-b-2 border-[#000000] hover:bg-gray-800 hover:text-white transition"
         >
           Subscribe
         </button>

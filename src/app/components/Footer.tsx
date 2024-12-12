@@ -5,8 +5,8 @@ const Footer = () => {
   return (
 
     
-    <footer className="bg-[#FFFFFF] py-8">
-      <div className="container mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-[#FFFFFF] py-8 ">
+      <div className="container mx-auto px-5 md:px-10 flex flex-cols-1 md:grid-cols-4 gap-8 ">
         {/* Contact Section */}
         <div>
          
