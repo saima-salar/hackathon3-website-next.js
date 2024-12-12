@@ -237,7 +237,8 @@ const page = () => {
       {/* Content Section */}
       <div className="mt-6">
         <p className="text-gray-700">
-          Embodying the raw, wayward spirit of rock 'n' roll, the Kilburn
+          Embodying the raw, wayward spirit of rock &apos;n&apos; roll
+          the Kilburn
           portable active stereo speaker takes the unmistakable look and sound
           of Marshall, unplugs the chords, and takes the show on the road.
         </p>
@@ -254,7 +255,7 @@ const page = () => {
       <div className="grid grid-cols-2 gap-4 mt-6">
   {/* Image 1 */}
   <div className="h-[300px] bg-[#FFF9E5] rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-    <img
+    <Image
       src="/images/product/Cloud sofa three seater + ottoman_2 1.png"
       alt="Product"
       className="h-full w-full object-cover rounded-lg"
@@ -263,7 +264,7 @@ const page = () => {
 
   {/* Image 2 */}
   <div className="h-[300px] bg-[#FFF9E5] rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-    <img
+    <Image
       src="/images/product/Cloud sofa three seater + ottoman_1 1.png"
       alt="Product"
       className="h-full w-full object-cover rounded-lg"
