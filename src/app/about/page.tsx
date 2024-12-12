@@ -67,6 +67,9 @@ const page = () => {
   <p className="text-lg text-[#000000]">
     Going all-in with millennial design
   </p>
+  <div className="p-4 text-[#000000] bg-opacity-50">
+      <Link href="/">Home</Link> &gt; <span>About</span>
+    </div>
 </div>
 
       </div>
