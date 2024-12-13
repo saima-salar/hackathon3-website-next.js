@@ -3,9 +3,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdAccessTimeFilled } from "react-icons/md";
+import { AiTwotoneDelete } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -63,107 +61,123 @@ const page = () => {
     width={77} 
     height={77} 
   />
-  <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Contact</h1>
+  <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Checkout</h1>
   <div className="p-4 text-[#000000] bg-opacity-50">
-    <Link href="/" >Home</Link> &gt; <span>Contact</span>
+    <Link href="/" >Home</Link> &gt; <span>Checkout</span>
   </div>
 </div>
     </section>
 
- <section>
-    <div className="max-w-6xl mx-20 p-8">
-      {/* Heading */}
-      <div className="text-center mb-8">
-        <h2 className=' text-[50px] font-bold h-24 transition-transform duration-300 hover:scale-125 ease-in-out '>Get In Touch With Us</h2>
-        <p className="text-gray-600 text-[10px]">
-        For More Information About Our Product & Services. Please Feel Free To Drop Us <br />An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
-        </p>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Contact Information */}
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-             <FaLocationDot /> Address
-            </h3>
-            <p className="text-gray-600 text-base  ">
-            236 5th SE Avenue, New <br />York NY10000, United <br />States
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-            <FaPhoneAlt /> Phone
-            </h3>
-            <p className="text-gray-600 text-base">Mobile: +(84) 546-6789 <br />
-            Hotline: +(84) 456-6789</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-            <MdAccessTimeFilled /> Working Time
-            </h3>
-            <p className="text-gray-600 text-base">Monday-Friday: 9:00 <br />
-                 22:00
-                 <br />
-            Saturday-Sunday: 9:00 <br />
-             21:00</p>
-          </div>
-        </div>
 
-        {/* Contact Form */}
-        <form className="space-y-4 ml-0">
-          <div>
-            <label className="block  font-medium text-base text-gray-700">
-              Your Name
-            </label>
+    <section className="bg-gray-50 min-h-screen p-6">
+      <div className="max-w-7xl mx-auto flex gap-6">
+        {/* Billing Details */}
+        <div className="flex-1 bg-white shadow-md rounded-lg p-6">
+          <h2 className="text-4xl font-bold mb-4">Billing Details</h2>
+          <form className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="First Name"
+                className="border rounded p-2 w-full"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="border rounded p-2 w-full"
+              />
+            </div>
             <input
               type="text"
-              placeholder="Enter your name"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
+              placeholder="Company Name (Optional)"
+              className="border rounded p-2 w-full"
             />
-          </div>
-          <div>
-            <label className="block text-base font-medium text-gray-700">
-              Email Address
-            </label>
+            <select className="border rounded p-2 w-full">
+              <option>Country / Region</option>
+              <option>Sri Lanka</option>
+              <option>United States</option>
+              <option>India</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Street Address"
+              className="border rounded p-2 w-full"
+            />
+            <input
+              type="text"
+              placeholder="Town / City"
+              className="border rounded p-2 w-full"
+            />
+            <input
+              type="text"
+              placeholder="Province"
+              className="border rounded p-2 w-full"
+            />
+            <input
+              type="text"
+              placeholder="ZIP Code"
+              className="border rounded p-2 w-full"
+            />
+            <input
+              type="text"
+              placeholder="Phone"
+              className="border rounded p-2 w-full"
+            />
             <input
               type="email"
-              placeholder="Abc@def.com"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
+              placeholder="Email Address"
+              className="border rounded p-2 w-full"
             />
-          </div>
-          <div>
-            <label className="block text-base font-medium text-gray-700">
-              Subject
-            </label>
-            <input
-              type="text"
-              placeholder="This is an optional"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
-            />
-          </div>
-          <div>
-            <label className="block text-base font-medium text-gray-700">
-              Message
-            </label>
             <textarea
+              placeholder="Additional Information"
+              className="border rounded p-2 w-full"
               rows={4}
-              placeholder="Hi! i’d like to ask about"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
-            />
+            ></textarea>
+          </form>
+        </div>
+
+        {/* Cart Summary */}
+        <div className="w-1/3 bg-white shadow-md rounded-lg p-6">
+        <div className="flex justify-between">
+          <h2 className="text-lg font-bold mb-4">Product</h2>
+          <h2 className="text-lg font-bold mb-4">Subtotal</h2>
           </div>
-          <button
-  type="submit"
-  className="w-1/2 py-2 text-[#000000] border-2 border-black bg-white rounded-2xl hover:bg-gray-200"
->
-  Submit
-</button>
-
-        </form>
+          <div className="space-y-4">
+            <div className="flex justify-between">
+              <span>Asgaard Sofa x 1</span>
+              <span>Rs. 250,000.00</span>
+            </div>
+            <div className="flex justify-between font-medium">
+              <span>Subtotal</span>
+              <span>Rs. 250,000.00</span>
+            </div>
+            <div className="flex justify-between font-bold">
+              <span>Total</span>
+              <span className="text-[#B88E2F]">Rs. 250,000.00</span>
+            </div>
+          </div>
+          <div className="mt-6 space-y-4">
+            <label className="block">
+              <input type="radio" name="payment" className="mr-2" />
+              Direct Bank Transfer
+            </label>
+            <label className="block">
+              <input type="radio" name="payment" className="mr-2" />
+              Cash on Delivery
+            </label>
+          </div>
+          <button className="w-full bg-[#FFFFFF] text-[#000000] border-2 border-black py-2 rounded mt-6 hover:bg-[#FFF9E5]">
+            Place Order
+          </button>
+        </div>
       </div>
-    </div>
-
     </section>
+
+
+
+
+
     <section className="bg-[#FAF4F4]  py-8 flex justify-evenly items-center w-full">
   <div className="text-left">
     <h3 className="text-xl font-semibold">Free Delivery</h3>
@@ -209,8 +223,8 @@ const page = () => {
           </div>
 
           {/* Help Section */}
-          <div className="flex flex-col items-center md:items-start">
-            <h5 className="font-bold mb-2 text-[#9F9F9F] text-[15px]">Help</h5>
+          <div className="flex flex-col items-center md:items-start c ">
+            <h5 className=" mb-2 text-[#9F9F9F] ">Help</h5>
             <ul className="space-y-2">
               <li className="hover:text-gray-700 transition-colors">
                 <a href="#">Payment Options</a>
@@ -247,7 +261,7 @@ const page = () => {
       </footer>
       <div className="border-t mt-8 pt-2 text-center text-gray-500 text-sm">
       ecommorce © Made by <b className="text-black">Saima Salar</b>, Figma Designed by <b className="text-black">Meubel House</b>
-      </div> 
+      </div>
 
 </main>
   )

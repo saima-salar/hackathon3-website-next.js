@@ -1,11 +1,10 @@
+  
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-import { MdAccessTimeFilled } from "react-icons/md";
+import { AiTwotoneDelete } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -63,107 +62,84 @@ const page = () => {
     width={77} 
     height={77} 
   />
-  <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Contact</h1>
+  <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Cart</h1>
   <div className="p-4 text-[#000000] bg-opacity-50">
-    <Link href="/" >Home</Link> &gt; <span>Contact</span>
+    <Link href="/" >Home</Link> &gt; <span>Cart</span>
   </div>
 </div>
     </section>
 
- <section>
-    <div className="max-w-6xl mx-20 p-8">
-      {/* Heading */}
-      <div className="text-center mb-8">
-        <h2 className=' text-[50px] font-bold h-24 transition-transform duration-300 hover:scale-125 ease-in-out '>Get In Touch With Us</h2>
-        <p className="text-gray-600 text-[10px]">
-        For More Information About Our Product & Services. Please Feel Free To Drop Us <br />An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!
-        </p>
-      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Contact Information */}
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-             <FaLocationDot /> Address
-            </h3>
-            <p className="text-gray-600 text-base  ">
-            236 5th SE Avenue, New <br />York NY10000, United <br />States
-            </p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-            <FaPhoneAlt /> Phone
-            </h3>
-            <p className="text-gray-600 text-base">Mobile: +(84) 546-6789 <br />
-            Hotline: +(84) 456-6789</p>
-          </div>
-          <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
-            <MdAccessTimeFilled /> Working Time
-            </h3>
-            <p className="text-gray-600 text-base">Monday-Friday: 9:00 <br />
-                 22:00
-                 <br />
-            Saturday-Sunday: 9:00 <br />
-             21:00</p>
-          </div>
-        </div>
-
-        {/* Contact Form */}
-        <form className="space-y-4 ml-0">
-          <div>
-            <label className="block  font-medium text-base text-gray-700">
-              Your Name
-            </label>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
-            />
-          </div>
-          <div>
-            <label className="block text-base font-medium text-gray-700">
-              Email Address
-            </label>
-            <input
-              type="email"
-              placeholder="Abc@def.com"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
-            />
-          </div>
-          <div>
-            <label className="block text-base font-medium text-gray-700">
-              Subject
-            </label>
-            <input
-              type="text"
-              placeholder="This is an optional"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
-            />
-          </div>
-          <div>
-            <label className="block text-base font-medium text-gray-700">
-              Message
-            </label>
-            <textarea
-              rows={4}
-              placeholder="Hi! i’d like to ask about"
-              className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-gray-200"
-            />
-          </div>
-          <button
-  type="submit"
-  className="w-1/2 py-2 text-[#000000] border-2 border-black bg-white rounded-2xl hover:bg-gray-200"
->
-  Submit
-</button>
-
-        </form>
-      </div>
+    <section className="bg-[#FFFFFF] w-full p-6">
+  <div className="flex justify-between items-start max-w-6xl mx-auto">
+    {/* Cart Items Table */}
+    <div className="w-[65%] bg-[#FFFFFF] shadow-lg rounded-lg p-6">
+      <table className="w-full text-left text-sm text-gray-500">
+        <thead>
+          <tr className="border-b bg-[#FFF9E5] text-[#000000] uppercase text-xs">
+            <th className="py-2 px-4">Product</th>
+            <th className="py-2 px-4">Price</th>
+            <th className="py-2 px-4">Quantity</th>
+            <th className="py-2 px-4">Subtotal</th>
+            <th className="py-2 px-4"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="border-b text-[12px]">
+            <td className="py-4 px-4 flex items-center space-x-4">
+              <Image
+                src="/images/cart/Asgaard sofa 2.png"
+                alt="Product"
+                width={113}
+                height={92}
+                className="w-16 h-16 rounded bg-[#FBEBB5]"
+              />
+              <span className="text-[#9F9F9F] font-normal">Asgaard Sofa</span>
+            </td>
+            <td className="py-4 px-4 text-[#9F9F9F]">Rs. 250,000.00</td>
+            <td className="py-4 px-4">
+              <input
+                type="number"
+                defaultValue={1}
+                className="w-12 border rounded text-center"
+              />
+            </td>
+            <td className="py-4 px-4 text-[#000000]">Rs. 250,000.00</td>
+            <td className="py-4 px-4">
+              <button className="text-[#B88E2F] h-8 w-8 hover:text-red-700">
+              <AiTwotoneDelete />
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    </section>
+    {/* Cart Totals */}
+    <div className="w-[30%] bg-[#FFF9E5] shadow-lg rounded-lg p-6 flex flex-col items-center text-[12px]">
+      <h2 className="text-[#000000] text-xl font-bold mb-4 text-center">
+        Cart Totals
+      </h2>
+      <div className="space-y-4 w-full">
+        <div className="flex justify-between w-full text-[#9F9F9F]">
+          <span>Subtotal</span>
+          <span className="font-medium text-[#9F9F9F]">Rs. 250,000.00</span>
+        </div>
+        <div className="flex justify-between w-full text-gray-800 font-bold">
+          <span>Total</span>
+          <span className="text-[#B88E2F]">Rs. 250,000.00</span>
+        </div>
+      </div>
+      <button className="w-full h-58.95 mt-6 border-2 border-black text-[#000000] py-2 rounded hover:bg-[#FBEBB5]">
+       <Link href="/checkout">Check Out</Link> 
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
     <section className="bg-[#FAF4F4]  py-8 flex justify-evenly items-center w-full">
   <div className="text-left">
     <h3 className="text-xl font-semibold">Free Delivery</h3>
@@ -209,8 +185,8 @@ const page = () => {
           </div>
 
           {/* Help Section */}
-          <div className="flex flex-col items-center md:items-start">
-            <h5 className="font-bold mb-2 text-[#9F9F9F] text-[15px]">Help</h5>
+          <div className="flex flex-col items-center md:items-start c ">
+            <h5 className=" mb-2 text-[#9F9F9F] ">Help</h5>
             <ul className="space-y-2">
               <li className="hover:text-gray-700 transition-colors">
                 <a href="#">Payment Options</a>
@@ -247,7 +223,7 @@ const page = () => {
       </footer>
       <div className="border-t mt-8 pt-2 text-center text-gray-500 text-sm">
       ecommorce © Made by <b className="text-black">Saima Salar</b>, Figma Designed by <b className="text-black">Meubel House</b>
-      </div> 
+      </div>
 
 </main>
   )
