@@ -117,23 +117,26 @@ const page = () => {
 
     {/* Cart Totals */}
     <div className="w-[30%] bg-[#FFF9E5] shadow-lg rounded-lg p-6 flex flex-col items-center text-[12px]">
-      <h2 className="text-[#000000] text-xl font-bold mb-4 text-center">
-        Cart Totals
-      </h2>
-      <div className="space-y-4 w-full">
-        <div className="flex justify-between w-full text-[#9F9F9F]">
-          <span>Subtotal</span>
-          <span className="font-medium text-[#9F9F9F]">Rs. 250,000.00</span>
-        </div>
-        <div className="flex justify-between w-full text-gray-800 font-bold">
-          <span>Total</span>
-          <span className="text-[#B88E2F]">Rs. 250,000.00</span>
-        </div>
-      </div>
-      <button className="w-full h-58.95 mt-6 border-2 border-black text-[#000000] py-2 rounded hover:bg-[#FBEBB5]">
-       <Link href="/checkout">Check Out</Link> 
-      </button>
+  <h2 className="text-[#000000] text-xl font-bold mb-4 text-center">
+    Cart Totals
+  </h2>
+  <div className="space-y-4 w-full">
+    <div className="flex justify-between w-full text-[#9F9F9F]">
+      <span>Subtotal</span>
+      <span className="font-medium text-[#9F9F9F]">Rs. 250,000.00</span>
     </div>
+    <div className="flex justify-between w-full text-gray-800 font-bold">
+      <span>Total</span>
+      <span className="text-[#B88E2F]">Rs. 250,000.00</span>
+    </div>
+  </div>
+ 
+    <button className="w-full h-[58.95px] mt-6 border-2 border-black text-[#000000] py-2 rounded hover:bg-[#FBEBB5]">
+    <Link href="/Checkout">  Check Out  </Link>
+    </button>
+ 
+</div>
+
   </div>
 </section>
 
