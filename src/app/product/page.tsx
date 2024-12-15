@@ -171,7 +171,7 @@ const page = () => {
           <button className="px-3 py-2 bg-gray-100 hover:bg-gray-200 transition duration-300">+</button>
         </div>
         <button className="bg-white text-black border-2 border-black px-6 py-2 rounded hover:bg-black hover:text-white transition duration-300">
-        <Link rel="stylesheet" href="/cart" > Add To Cart </Link>
+        <Link href="/cart" > Add To Cart </Link>
         </button>
       </div>
 

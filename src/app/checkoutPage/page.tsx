@@ -3,7 +3,6 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-import { AiTwotoneDelete } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 
