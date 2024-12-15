@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterScale = () => {
   return (
- <div className="border-t mt-8 pt-4 text-center text-gray-500 text-sm">
+ <div className="bg-[#FFFFFF] border-t-[1px] h-59px w-1240.01px top-4990px  left-102.01px text-left text-[#000000] text-base">
       ecommorce © Made by <b className="text-black">Saima Salar</b>, Figma Designed by <b className="text-black">Meubel House</b>
       </div> 
   )
