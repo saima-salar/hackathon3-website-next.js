@@ -41,13 +41,20 @@ const page = () => {
 
       {/* Hero Section */}
       <section
-        className="relative w-full h-64 md:h-96 bg-cover bg-center flex flex-col justify-center items-center"
-        style={{ backgroundImage: "url('/images/contact/Rectangle 1.png')" }}
+        className="relative w-full h-316 bg-cover bg-center flex flex-col justify-center items-center"
+        style={{
+          backgroundImage: "url('/images/contact/Rectangle 1.png')",
+        }}
       >
-        <div className="z-10 text-center text-black">
-          <Image src="/images/contact/logo.png" alt="Logo" width={77} height={77} />
-          <h1 className="text-2xl md:text-4xl font-bold mt-2">Checkout</h1>
-          <div className="text-sm md:text-base">
+        <div className="z-10 text-center flex flex-col justify-center items-center text-[#000000]">
+          <Image
+            src="/images/contact/logo.png"
+            alt="image"
+            width={77}
+            height={77}
+          />
+          <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Checkout</h1>
+          <div className="p-4 text-[#000000] bg-opacity-50">
             <Link href="/">Home</Link> &gt; <span>Checkout</span>
           </div>
         </div>

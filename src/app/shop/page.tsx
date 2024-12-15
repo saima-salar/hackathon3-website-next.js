@@ -46,20 +46,20 @@ const page = () => {
           <MdOutlineShoppingCart className="text-black text-lg transition-transform duration-300 hover:scale-110 ease-in-out" />
         </div>
       </nav> 
-
       <section
-        className="relative w-full h-80 bg-cover bg-center flex flex-col justify-center items-center"
-        style={{ backgroundImage: "url('/images/second-page/Rectangle 1.png')" }}
+        className="relative w-full h-316 bg-cover bg-center flex flex-col justify-center items-center"
+        style={{
+          backgroundImage: "url('/images/contact/Rectangle 1.png')",
+        }}
       >
-        <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="z-10 text-center flex flex-col justify-center items-center text-[#000000]">
-          <Image 
-            src="/images/contact/logo.png" 
-            alt="Logo" 
-            width={77} 
-            height={77} 
+          <Image
+            src="/images/contact/logo.png"
+            alt="image"
+            width={77}
+            height={77}
           />
-          <h1 className="text-4xl font-bold mb-0 mt-0">Shop</h1>
+          <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">Shop</h1>
           <div className="p-4 text-[#000000] bg-opacity-50">
             <Link href="/">Home</Link> &gt; <span>Shop</span>
           </div>
