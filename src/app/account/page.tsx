@@ -37,19 +37,24 @@ const page = () => {
       </nav>
 
       <section
-        className="relative w-full h-[316px] bg-cover bg-center flex flex-col justify-center items-center"
-        style={{ backgroundImage: "url('/images/contact/Rectangle 1.png')" }}
+        className="relative w-full h-316 bg-cover bg-center flex flex-col justify-center items-center"
+        style={{
+          backgroundImage: "url('/images/contact/Rectangle 1.png')",
+        }}
       >
-        <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="z-10 text-center flex flex-col justify-center items-center text-[#000000]">
-          <Image src="/images/contact/logo.png" alt="image" width={77} height={77} />
+          <Image
+            src="/images/contact/logo.png"
+            alt="image"
+            width={77}
+            height={77}
+          />
           <h1 className="text-4xl md:text-4xl font-bold mb-0 mt-0">My Account</h1>
           <div className="p-4 text-[#000000] bg-opacity-50">
             <Link href="/">Home</Link> &gt; <span>My Account</span>
           </div>
         </div>
       </section>
-
       <section>
         <div className="h-auto w-full flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-6 rounded-lg shadow-md">
