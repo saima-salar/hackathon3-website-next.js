@@ -33,7 +33,7 @@ const TopPicks = () => {
           />
         </div>
         <p className="font-normal mt-2">
-          Granite dining table with dining chair
+          Granite dining table with chair
         </p>
         <p>
           <b>Rs. 25,000.00</b>
