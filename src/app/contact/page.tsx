@@ -1,21 +1,29 @@
 
+"use client"
+
 import React from "react";
-import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
-import { MdAccessTimeFilled } from "react-icons/md";
+import { MdAccessTimeFilled, MdOutlineShoppingCart } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "../components/Footer";
 import FooterScale from "../components/FooterScale";
+import { useCart } from "../context/CartContext"; // Import useCart
+import { useWishlist } from "../context/WishlistContext"; // Import useWishlist
+
 
 const page = () => {
+
+    const { cart } = useCart(); // Access cart from context
+    const { wishlist } = useWishlist(); // Access wishlist from context
   return (
+
     <main>
-<nav className="flex justify-between items-center px-6 py-4 bg-white drop-shadow-lg">
+{/* <nav className="flex justify-between items-center px-6 py-4 bg-white drop-shadow-lg">
         <div className="text-lg font-extrabold transition-transform duration-300 hover:scale-125 ease-in-out">
           <Image 
             src="/images/contact/logo.png" 
@@ -27,7 +35,7 @@ const page = () => {
         <ul className="flex space-x-6 text-[14px] text-[#000000]">
           <li className="transition-transform duration-300 hover:scale-125 ease-in-out"><Link href="/">Home</Link></li>
           <li className="transition-transform duration-300 hover:scale-125 ease-in-out"><Link href="/shop">Shop</Link></li>
-          <li className="transition-transform duration-300 hover:scale-125 ease-in-out"><Link href="/">About</Link></li>
+          <li className="transition-transform duration-300 hover:scale-125 ease-in-out"><Link href="/about">About</Link></li>
           <li className="transition-transform duration-300 hover:scale-125 ease-in-out"><Link href="/contact">Contact</Link></li>
         </ul>
 
@@ -39,7 +47,64 @@ const page = () => {
           <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
           <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
         </div>
+      </nav> */}
+
+<nav className="flex justify-between items-center px-6 py-4 bg-white drop-shadow-lg">
+        <div className="text-lg font-extrabold transition-transform duration-300 hover:scale-125 ease-in-out">
+          <Image
+            src="/images/contact/logo.png"
+            alt="image"
+            width={40}
+            height={40}
+          />
+        </div>
+        <ul className="flex space-x-6 text-[14px] text-[#000000]">
+          <li className="transition-transform duration-300 hover:scale-125 ease-in-out">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="transition-transform duration-300 hover:scale-125 ease-in-out">
+            <Link href="/shop">Shop</Link>
+          </li>
+          <li className="transition-transform duration-300 hover:scale-125 ease-in-out">
+            <Link href="/about">About</Link>
+          </li>
+          <li className="transition-transform duration-300 hover:scale-125 ease-in-out">
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
+
+        <div className="flex space-x-4">
+          <Link href="/account">
+            <FaRegUser className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out cursor-pointer" />
+          </Link>
+          <IoSearch className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
+
+          {/* <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
+           */}
+          {/* Wishlist Icon with Wishlist Count */}
+          <Link href="/wishlist" className="relative">
+            <FaRegHeart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 hover:text-red-700 ease-in-out" />
+            {wishlist.length > 0 && (
+              <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                {wishlist.length}
+              </span>
+            )}
+          </Link>
+
+          {/* <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" /> */}
+
+          {/* Shopping Cart Icon with Cart Count */}
+          <Link href="/cartpage" className="relative">
+            <MdOutlineShoppingCart className="text-black text-[20px] transition-transform duration-300 hover:scale-125 ease-in-out" />
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                {cart.length}
+              </span>
+            )}
+          </Link>
+        </div>
       </nav>
+         
       <section
         className="relative w-full h-316 bg-cover bg-center flex flex-col justify-center items-center"
         style={{

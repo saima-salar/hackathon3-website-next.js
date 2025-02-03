@@ -7,8 +7,8 @@ const Hero = () => {
   {/* Left Section */}
   <div className="text-center md:text-left max-w-md space-y-6 md:ml-12 mt-8">
     <h1 className="text-[64px] font-medium leading-tight animate-fadeIn flex md:space-x-2 justify-center md:justify-start">
-      <span className="inline-block">Rocket Single</span>
-      <span className="inline-block">Seater</span>
+      <span className="inline-block">Rocket Seater</span>
+      <span className="inline-block">Single</span>
     </h1>
 
     <button className="inline-block px-6 py-2 mt-4 text-black font-semibold border-b-2 border-black hover:text-gray-700">
