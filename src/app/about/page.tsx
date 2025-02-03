@@ -12,7 +12,7 @@ import FooterScale from "../components/FooterScale";
 import { useCart } from "../context/CartContext"; // Import useCart
 import { useWishlist } from "../context/WishlistContext"; // Import useWishlist
 
-const page = () => {
+const AboutPage = () => {
   const { cart } = useCart(); // Access cart from context
   const { wishlist } = useWishlist(); // Access wishlist from context
   return (
@@ -212,4 +212,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AboutPage;

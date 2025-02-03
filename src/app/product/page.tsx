@@ -15,7 +15,7 @@ import {
 import Footer from "../components/Footer";
 import FooterScale from "../components/FooterScale";
 
-const page = () => {
+const Page = () => {
   return (
     <main className="bg-[#FFFFFF]">
       <nav className="flex justify-between items-center px-10 py-4 bg-[#FFFFFF] drop-shadow-lg">
@@ -375,4 +375,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

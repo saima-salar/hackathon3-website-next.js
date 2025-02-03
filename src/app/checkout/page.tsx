@@ -7,7 +7,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import FooterScale from "../components/FooterScale";
 
-const page = () => {
+const Page = () => {
   return (
     <main>
       {/* Navbar */}
@@ -163,4 +163,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
